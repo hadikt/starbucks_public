@@ -1,0 +1,43 @@
+<div class="w-full overflow-hidden relative">
+  <div class="p-4 flex items-center gap-12  md:p-6 md:ml-24  ">
+
+    <img class="w-10 md:w-12 " src="../../assets/Starbucks_Corporation_Logo_2011.svg.png" alt="">
+    <div class="invisible md:visible md:flex md:gap-6 ">
+    <button class="text-base"><strong>MENU</strong></button>
+    <button class="text-base"><strong>REWARDS</strong></button>
+    <button class="text-base"><strong>GIFT CARDS</strong></button>
+
+   <div class="absolute right-44 flex invisible gap-3 items-center z-10  md:visible">
+<a href="" class="flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+</svg>
+ Find a store</a>
+ <button class="border w-24 h-9 border-black font-bold items-center text-xs p-2 rounded-full">sign in</button>
+    <button class="border w-24 h-9 text-white bg-black font-bold items-center text-xs p-2 rounded-full">join now</button>
+
+   </div>
+  </div>
+  <button class="h-12 flex items-center pr-2" (click)="onClick(trueElement)">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="gray" class="w-7 h-7 absolute right-2 md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    
+  </button>
+  </div>
+  <p class="w-screen h-[1px]  bg-gray-300"></p>
+</div>
+<div class="md:hidden w-3/4 h-[calc(100vh-5rem)] overflow-hidden absolute top-[5rem] right-0 bg-white transition-all" *ngIf="trueElement">
+  <div class="flex flex-col mr-3 p-2 items-start gap-4">
+  <button class="text-base hover:bg-slate-200"><strong>MENU</strong></button>
+  <button class="text-base hover:bg-slate-200"><strong>REWARDS</strong></button>
+    <button class="text-base hover:bg-slate-200"><strong>GIFT CARDS</strong></button>
+  </div>
+  <div class="flex justify-center p-4">
+   <p class="w-56 h-[1.5px] bg-slate-400 "></p>
+  </div>
+  <div class="flex gap-4 p-6">
+   
+    <button class="border w-24 h-9 border-black font-bold items-center text-xs p-2 rounded-full">sign in</button>
+    <button class="border w-24 h-9 text-white bg-black font-bold items-center text-xs p-2 rounded-full">join now</button>
+  </div>
+</div>

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Dosis:wght@200&family=Italianno&family=Montserrat+Alternates:ital,wght@1,900&family=Permanent+Marker&family=Poppins:ital,wght@0,300;1,100;1,600&family=Roboto:ital,wght@1,100&display=swap');
+font-display {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
